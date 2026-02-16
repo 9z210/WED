@@ -21,11 +21,12 @@ h1 {
 }
 
 .header-inner {
-  margin: 0 350px;
+  margin: 0 auto;
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 18px;
+  padding: 0 16px 18px;
+  max-width:1040;
 }
 
 .header-left {
@@ -357,6 +358,11 @@ background-color: #000; / ← 色 */
   .business-item {
     width: 100%;
   }
+
+  .business-item:nth-child(2),
+  .business-item:nth-child(4) {
+  margin-top: 0px;
+ }
 }
 
 
@@ -475,6 +481,7 @@ footer {
   display: flex;
   gap: 40px;
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 .footer-logo img {
@@ -487,7 +494,6 @@ footer {
   margin-bottom: 16px;
   font-size: 14px;
   line-height: 0.2;
-  margin-left: 600px;
 }
 
 small {
